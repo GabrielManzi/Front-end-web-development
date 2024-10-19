@@ -4,13 +4,12 @@ import React from 'react';
 
 function Projetos() {
   const projetos = [
+    
     {
-      nome: 'Front-end Web development',
-      descricao: 'Projeto de criação de site para utilizar como portifólio, solicitado na cadeira de Frontend',
+      nome: 'Front-end web development',
+      descricao: 'Projeto de desenvolvimento front-end.',
       link: 'https://github.com/GabrielManzi/Front-end-web-development',
     },
-    
-    // Adicione mais projetos conforme necessário
   ];
 
   return (
@@ -23,7 +22,9 @@ function Projetos() {
               <div className="card-body">
                 <h5 className="card-title">{projeto.nome}</h5>
                 <p className="card-text">{projeto.descricao}</p>
-                <a href={projeto.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Ver Projeto</a>
+                <a href={projeto.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                  Ver Projeto
+                </a>
               </div>
             </div>
           </div>
