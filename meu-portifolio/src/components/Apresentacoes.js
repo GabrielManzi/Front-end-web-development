@@ -1,28 +1,21 @@
 // src/components/Apresentacoes.js
-
 import React from 'react';
 
 function Apresentacoes() {
-  const apresentacoes = [
-    {
-      titulo: 'Apresentação em PPT 1',
-      link: 'link_para_seu_arquivo_ppt1',
-    },
-    
-    // Adicione mais apresentações conforme necessário
-  ];
-
   return (
-    <div>
-      <h2>Documentos de Apresentações</h2>
-      <ul className="list-group">
-        {apresentacoes.map((apresentacao, index) => (
-          <li className="list-group-item d-flex justify-content-between align-items-center" key={index}>
-            {apresentacao.titulo}
-            <a href={apresentacao.link} target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary btn-sm">Visualizar</a>
-          </li>
-        ))}
-      </ul>
+    <div className="text-center">
+      <h2>Minhas Apresentações</h2>
+      <p className="mt-3">
+        Veja minha apresentação diretamente no Canva clicando no link abaixo:
+      </p>
+      <a
+        href="https://www.canva.com/design/DAFo2sQWU_Q/AGira8VBWrwHGmgnP1MUpA/view?utm_content=DAFo2sQWU_Q&utm_campaign=designshare&utm_medium=link&utm_source=editorhttps://www.canva.com/design/DAFo2sQWU_Q/AGira8VBWrwHGmgnP1MUpA/view?utm_content=DAFo2sQWU_Q&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary"
+      >
+        Ver Apresentação
+      </a>
     </div>
   );
 }
